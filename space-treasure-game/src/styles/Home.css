@@ -1,0 +1,203 @@
+/* Background styles */
+.ocean {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/Space.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper_Space_game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  position: relative;
+}
+
+.Menu_board {
+  width: 100%;
+  z-index: 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 4px solid #5dd9ff;
+  border-radius: 5px;
+  padding: 10px 0px;
+  position: relative;
+}
+
+.location_cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location_cover .coordinate_display {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.Time,
+.score {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.location_cover img {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.game_withsidebar_coordinaters {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+
+.Target_coordinate_display {
+  position: relative;
+  margin-right: 20px;
+  width: 200px;
+  height: 602px;
+  /* background-color: #061439; */
+  -webkit-backdrop-filter: saturate(100%) blur(2px);
+  backdrop-filter: saturate(180%) blur(2px);
+  background-color: #06143922;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  z-index: 100;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.game_withsidebar_coordinaters .coordinate_label {
+  position: relative;
+  z-index: 5;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
+
+.target_coordinate_cloud {
+  position: relative;
+  z-index: 5;
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.target_coordinate_cloud .target_coordinate_cloud_img {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.target_coordinate_cloud .coordinate_value {
+  position: absolute;
+  z-index: 100;
+  font-size: 22px;
+  font-weight: 600;
+  color: #5dd9ff;
+}
+
+.footer_buttons {
+  width: calc(100% - 220PX);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_buttons .Show_Coordinate_Buttons {
+  position: relative;
+  z-index: 100;
+  border-radius: 10px;
+  border: 2px solid #5dd9ff;
+  color: #5dd9ff;
+}
+
+/* Grid system styles */
+.graph-paper-container {
+  position: relative;
+  z-index: 100;
+}
+
+.result-image {
+  animation: float 2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.game-over-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+  border: 2px solid #5dd9ff;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+}
+
+.game-over-modal h2 {
+  color: #5dd9ff;
+  margin-bottom: 1rem;
+}
+
+.game-over-modal p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.game-over-modal button {
+  background: #5dd9ff;
+  color: #061439;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.game-over-modal button:hover {
+  background: #4ac4e6;
+}
