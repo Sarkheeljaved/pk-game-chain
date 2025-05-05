@@ -1,0 +1,233 @@
+.chat-app {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+
+.left_menu {
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.user-selection {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  justify-content: start;
+}
+
+.user-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+}
+
+/* right side */
+.chat_side {
+  min-width: calc(100% - 300px);
+  height: 100vh;
+  /* background-color: var(--chat-background-color); */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* chet box setting  */
+.custom-shape {
+  min-width: 50%;
+  max-width: 90%;
+  min-height: 50vh;
+  max-height: auto;
+  background-color: #FFFED6;
+  border-radius: 35px;
+  z-index: 1;
+  position: relative;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.corners_customshape-1 {
+  top: 0;
+  left: 0;
+  border-radius: 0px 25px 25px 25px;
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+.corners_customshape-2 {
+  top: 0;
+  right: 0;
+  border-radius: 20px 0px 25px 20px;
+  margin-top: -5px;
+  margin-right: -5px;
+}
+
+.corners_customshape-3 {
+  bottom: 0;
+  left: 0;
+  border-radius: 20px 20px 20px 0px;
+  margin-bottom: -5px;
+  margin-left: -5px;
+}
+
+.corners_customshape-4 {
+  bottom: 0;
+  right: 0;
+  border-radius: 20px 20px 0px 20px;
+  margin-bottom: -5px;
+  margin-right: -5px;
+}
+
+.corners_customshape-1,
+.corners_customshape-2,
+.corners_customshape-3,
+.corners_customshape-4 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  background-color: transparent;
+}
+
+.messages {
+  width: 100%;
+  max-height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.message-container.left {
+  justify-content: flex-start;
+}
+
+.message-container.right {
+  justify-content: flex-end;
+}
+
+.day_date_name {
+  font-size: 12px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.chat_with_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+  margin: 10px;
+  position: relative;
+}
+
+.userchat {
+  min-width: 150px;
+  background-color: #ffffff;
+  border: 1px solid #413c3c;
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+}
+
+.chatbox_corner_left {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  margin-left: -10px;
+}
+
+.chatbox_corner_right {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  margin-right: -10px;
+}
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.auth img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.message-text {
+  width: 100%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 22.8px;
+  font-weight: 500;
+}
+
+.timestamp {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+/* ///////////////////////////// */
+.pagination-controls {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  gap: 10px;
+}
+
+.pagination-controls .button1,
+.pagination-controls .button2 {
+  width: auto;
+  background: linear-gradient(to left, #e65100, #ffa726, #e65100);
+  transition: 0.3s ease-in;
+  color: #ffffff;
+}
+
+.pagination-controls button:hover {
+  width: auto;
+  background: linear-gradient(to left, #e65100, #ffa726, #e65100);
+  opacity: 0.7;
+}
+
+.pagination-controls button :disabled {
+  width: auto;
+  background: linear-gradient(to left, #e65100, #ffa726, #e65100);
+}

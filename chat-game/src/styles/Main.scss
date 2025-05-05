@@ -1,0 +1,141 @@
+.Page_Wrapper {
+  background: linear-gradient(to top, rgb(23, 216, 250), rgb(4, 88, 214));
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.start_game_wrapper {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn_start {
+  padding: 10px;
+}
+
+.timer {
+  padding: 10px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+
+.cloud_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden;
+}
+.cloud_wrapper img {
+  width: 180px;
+  height: 150px;
+}
+.frame-1 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 128px;
+  width: 148px;
+  position: relative;
+  animation: moveCloud 10s linear infinite;
+}
+
+@keyframes moveCloud {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.frame-1:hover {
+  animation-play-state: paused;
+}
+.hit-arrow {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bow_prototype {
+  padding: 10px;
+  width: 300px;
+  position: absolute;
+  bottom: 60px;
+  left: calc(50vw - 150px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bow {
+  width: 100%;
+}
+
+.bow img {
+  width: 100%;
+  height: 100%;
+}
+
+.thread {
+  position: absolute;
+  background-color: black;
+  width: 275px;
+  height: 3px;
+  bottom: 23px;
+  right: 22px;
+}
+.arrow {
+  position: absolute;
+  left: calc(50% - 5px);
+  bottom: 15px;
+  width: 10px;
+  height: 150px;
+  transition: transform 0.1s linear;
+}
+
+.arrow img {
+  width: 100%;
+  height: 100%;
+}
+.bow_aim_line {
+  position: absolute;
+  width: 10px;
+  height: 400px;
+  background-color: red;
+}
+
+.fired-arrow {
+  position: absolute;
+  width: 10px;
+  height: 150px;
+  //   transform-origin: bottom center;
+}
+
+.fired-arrow img {
+  width: 100%;
+  height: 100%;
+}
+.arrow_group {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  display: flex;
+  gap: 10px;
+}
+
+.arrow_group img {
+  width: 10px;
+  height: 150px;
+}

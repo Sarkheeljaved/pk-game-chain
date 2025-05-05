@@ -1,0 +1,81 @@
+.admin-page {
+  min-height: 100vh;
+  padding: 10px;
+}
+
+/* Add these new styles to your existing CSS */
+.user-item {
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+.user-item:hover {
+  background-color: #f8f9fa;
+}
+
+.d-flex.gap-1 .btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+.d-flex.gap-2 {
+  gap: 0.5rem;
+}
+
+/* Keep all your existing styles */
+.voice-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.voice-option {
+  padding: 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.voice-option:hover {
+  background-color: #f8f9fa;
+  border-color: #adb5bd;
+  transform: translateY(-2px);
+}
+
+.voice-option.selected {
+  background-color: #e9ecef;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.25);
+}
+
+.voice-name {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.voice-description {
+  color: #6c757d;
+  font-size: 0.8rem;
+}
+
+.avatar-preview {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #6c757d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
